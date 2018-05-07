@@ -1,0 +1,84 @@
+#pager {
+    overflow: hidden;
+    text-align: center;
+    height: 30px;
+    width: 900px;
+}
+#pager .page {
+    /* float: left; */
+    display: inline-block;
+}
+#pager .page input {
+    height: 30px;
+    vertical-align: top;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 0 10px;
+    float: left;
+    outline-style: none;
+}
+#pager .page input[type=button] {
+    cursor: pointer;
+    color: #428bca;
+}
+#pager .page .first-page {
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+#pager .page .last-page {
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+#pager .page .page-num {
+    width: auto;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+    margin: 0 5px;
+}
+#pager .page .go-page {
+    border-radius: 5px;
+}
+#pager .page ul {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#pager .page li {
+    padding:0 12px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-left: none;
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    float: left;
+    color: #428bca;
+    cursor: pointer;
+}
+#pager .page li:first-of-type {
+    border-left: 1px solid #ccc;
+}
+
+#pager .page-size {
+    float: right;
+    height: 30px;
+}
+#pager .page-size select {
+    float: left;
+    margin-top: 5px;
+    outline-style: none;
+}
+
+#pager span {
+    float: left;
+    line-height: 30px;
+}
+#pager .active {
+    background-color: #428bca;
+    color: #fff !important;
+}
